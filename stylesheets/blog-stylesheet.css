@@ -39,13 +39,12 @@ html{
   background-color: #ffc0cb;
   position:fixed;
   top:100px;
-  margin-bottom:1px;
 }
 
 #Cultural_list{
   width:190px;
   text-align:center;
-  margin-top:1px;
+  margin-top:1em;
   background-color: #ffc0cb;
   position:fixed;
   top:200px;
