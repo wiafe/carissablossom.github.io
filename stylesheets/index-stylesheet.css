@@ -20,6 +20,32 @@ html{
   bottom:64%;
   margin-left: 30%;
 }*/
+#social_media{
+  position:absolute;
+  left:80%;
+  top:0;
+}
+
+#social_media ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+#social_media ul li{
+  display:inline;
+}
+
+
+#social_media ul li a{
+  text-decoration: none;
+}
+
+#social_media ul li a img{
+  width:2em;
+  height:2em;
+
+}
 
 #big_title{
   width:100%;
@@ -47,7 +73,7 @@ html{
 #home_img{
   position:absolute;
   top:-10%;
-  z-index:-5;
+  z-index:-6;
   margin-left: -2%;
   width:103%;
 }
