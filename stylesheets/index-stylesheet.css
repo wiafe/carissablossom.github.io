@@ -5,11 +5,12 @@
 
 html{
   font-family: league-gothic, Calibri, sans-serif;
-  color:#402e01;
-  background-image: url(https://github.com/carissablossom/carissablossom.github.io/blob/master/Screen%20Shot%202015-03-26%20at%209.09.46%20pm.png?raw=true)
+  color:#361c02;
+
+  /*background-image: url(https://dl-web.dropbox.com/get/YPO-WPO%20Mt%20Fuji%202014/IMG_2105.JPG?_subject_uid=308975299&w=AADNhM51FH3ePH0ezp28KRkhJG0hguiioLGX8yu7ngcgrA)*/
 }
 
-#titleopacity{
+/*#titleopacity{
   background-color: white;
   opacity:0.5;
   position:absolute;
@@ -18,7 +19,7 @@ html{
   width:32%;
   bottom:64%;
   margin-left: 30%;
-}
+}*/
 
 #big_title{
   width:100%;
@@ -27,8 +28,9 @@ html{
   top:10%;
   font-size: 2.25em;
   z-index: 1;
-  color: #402e01;
+  color: #df1f15;
   font-weight: bolder;
+  text-shadow: 1px 1px #361c02;
 }
 
 #subtitle{
@@ -37,17 +39,18 @@ html{
   position:absolute;
   top:27%;
   z-index: 2;
-  color:#402e01;
+  color:#df1f15;
   font-weight: bold;
+  text-shadow: 1px 1px #361c02;
 }
 
-/*#home_img{
+#home_img{
   position:absolute;
   top:-10%;
   z-index:-5;
   margin-left: -2%;
-  height:95%;
-}*/
+  width:103%;
+}
 
 #bio{
   padding:1em;
@@ -79,7 +82,7 @@ html{
   bottom:0;
   width:103%;
   padding:0.5em;
-  background-color: #ced5b0;
+  background-color: #497ed8;
   margin-left: -2%;
 }
 
@@ -97,7 +100,7 @@ html{
 
 #nav ul li a{
   text-decoration: none;
-  color:#402e01;
+  color:#361c02;
   text-align: center;
   font-size:1.5em;
   font-weight: bold;
