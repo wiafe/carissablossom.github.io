@@ -1,12 +1,20 @@
 html{
-  background-color:#fdf5e6;
-  font-family: Helvetica, Arial, san-serif;
+  background-image:url (https://github.com/carissablossom/carissablossom.github.io/blob/master/Screen%20Shot%202015-03-26%20at%208.56.26%20pm.png?raw=true);
+  font-family: Roboto Condensed, Calibri, Sans-serif;
   font-size: 1em;
+  font-weight: bold;
+  color:#FFFFFF;
 }
 
-homemenu{
-  width:100%;
-  height:3em;
-  border:1px solid black;
+a{
+    text-decoration:none;
+    color:#ffffff;
 }
 
+table#homemenu {
+
+    padding:0.5em;
+    width:100%;
+    font-size:2em;
+    background-color:#93e1ff;
+}
