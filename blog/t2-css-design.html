@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+  <title>Carissa Blossom Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+<!--PAGE MENU-->
+  <p id="menu" center> <a id="firstlink" href="http://carissablossom.github.io/">Home</a> | <a class="link" href="http://carissablossom.github.io/technical">Technical</a> | <a class="link" href="http://carissablossom.github.io/cultural">Cultural</a> | <a class="link" href="http://carissablossom.github.io/contact">Contact Me</a> </p>
+
+
+<div id="Technical_list">
+    <p class="title">Technical Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/t1-git-blog.html">Version Control, Git & Github</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+    </ol>
+  </div>
+  <div id="Cultural_list">
+    <p class="title">Cultural Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/c1-chefs-kitchen.html">Initial Impressions on DBC Culture</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+     </ol>
+  </div>
+
+  <div id="About_Me">
+    <p id="carissa">Meet Carissa</p>
+    <p><img id="profile" alt="profile photo" src="https://scontent-2.2914.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10994159_10203836808535805_865786660018488194_n.jpg?oh=cc745bcdf1c7b3b2796ede90d2f1e4ef&oe=55BB462C"/></p>
+    <p id="aboutbody">I'm a San Francisco based student at Dev Bootcamp with dreams of becoming a software developer. I was born and raised in Singapore. Besides programming and all things techie, I'm passionate about health, fitness, travel and sci-fi. I'm proud to call myself a marathoner, mountain climber and TKD blackbelt. I dream of one day combining my three main passions, tech, health and fitness, to create something awesome!</p></div>
+
+<div id="whitespace"></div>
+<div id="actual_post">
+<!--POST TITLES-->
+  <h1>Post Title</h1>
+  <h2>The subtitle, if you want it</h2>
+  <h4>Today's Date</h4>
+
+<!--PARAGRAPHS HERE-->
+  <section>
+    <p>
+      It's crazy to think about the fact that a week ago, I didn't any ANY html or css at all, and now I've created two website pages of my own, and am planning the design for many more!
+
+    </p>
+
+    <p>
+        <!--Your second paragraph goes here.-->
+        Some things about using html and css are basic. In my honest opinion, html itself is very straight forward and easy to understand, so long as you're not too concerned with appearance and just want to put a bunch of text, links and images up on the web. It's CSS, and our desire to make these sites attractive and user friendly that brings in the trouble. Added to that is the fact that we now have an extra issue to deal with: the multitude of different screen sizes people are viewing your content from!
+    </p>
+
+    <p>
+        One key concept when dealing with site appearance and usability is POSITIONING. Just to be clear, I'm talking about a lot more than just the one property that happens to be called positioning. I'm talking about sections (usually segregated by DIVS):
+        <ul>
+          <li>where do you want to put them? </li>
+          <li>how big should they be?</li>
+          <li>how much space should be between them and another element?</li>
+          <li>what happens when I make my browser window smaller or bigger?</li>
+        </ul>
+    </p>
+
+    <p>
+        <!--Your fourth paragraph goes here.-->
+        <strong>Positioning</strong> plays a big role in this, but I'm not going to get into that because <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">this article</a> does a great job of explaining it for us. What I'm going to explain instead is the difference between margins, padding and borders.
+    </p>
+
+    <p>
+        Let's get the easy one out of the way first. Borders just refer to the line around the section/area (usually a div, but could also be a paragraph tag 'p', a header tag, etc). They get <strong>three</strong> values:
+        <ul>
+          <li>thickness (usually in pixels)</li>
+          <li>style (ie: solid or dashed)</li>
+          <li>color</li>
+        </ul>
+        It will create a line around the area in question based on the three values you give it.
+    </p>
+
+    <p>
+      I like to think of margin and padding as a OUTSIDE vs INSIDE. Let's go back to that box/section/area (you choose whatever word makes the most sense for you) that we just created a border around above. Leave that border. It will help make the difference here a bit clearer. Let's say that this particular border is around a paragraph of text. BOTH margin and padding will add space, but margin does it to the space outside the box, and padding does it to the space inside the box. When you use <strong>margin</strong>, the space between the text and the border line won't change, but the space between the border and the elements around that section will change. When you use <strong>padding</strong>, it will not increase the space between the border and outside elements, but instead increase the space between the border and the text.
+    </p>
+
+
+    <p>
+      One extra thing about margins and padding that make them both exciting and useful, is that you can use them to help ensure your page resizes properly by writing their values in as percentages (along with width), instead of using px, em or even vw (all different units for your screen). Sounds cool? Go try it out for yourself!
+    </p>
+
+  </section>
+</div>
+</main>
+
