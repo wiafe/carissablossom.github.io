@@ -17,6 +17,7 @@ html{
   position:fixed;
   left:65em;
   top:0;
+
 }
 
 #social_media ul{
@@ -45,21 +46,26 @@ html{
   color:#000000;
   font-weight: bold;
   font-size: 2.25em;
+
 }
 
 #big_title h1{
   position:fixed;
   text-align:center;
-  top:1.8em;
-  left:5.5em;
+  /*top:1.8em;
+  left:5.5em;*/
+  width:100%;
+  padding-top:14%;
+  margin-bottom: 2%;
 }
 
 
 #subtitle{
-  width:80em;
+  width:100%;
   text-align: center;
   position:fixed;
-  top:15em;
+  /*top:15em;*/
+  padding-top:23%;
   color:#000000;
   font-weight: bold;
 }
@@ -68,15 +74,15 @@ html{
   position:fixed;
   text-align:center;
   left:5.5em;
+  margin-top: 2%;
 }
 
 
 #bio{
-  padding:1em;
   position:fixed;
   bottom:2em;
-  margin-left: -1.5%;
-  width:80em;
+  width:100%;
+  padding-bottom:3%;
 }
 
 #bio p{
@@ -86,6 +92,7 @@ html{
   text-align: center;
   color:#ee347b;
   text-shadow: 1px 1px black;
+
 }
 
 #whitespace{
@@ -105,8 +112,8 @@ html{
 #nav{
   position:absolute;
   bottom:0;
-  width:80em;
-  padding:0.5em;
+  width:101%;
+  padding-bottom: 0.7%;
   background-color: pink;
   background-position: fixed;
   background-repeat: no-repeat;
