@@ -5,7 +5,7 @@
 
 html{
   font-family: league-gothic, Calibri, sans-serif;
-  color:#361c02;
+  color:#000000;
   background-image:url(https://splashbase.s3.amazonaws.com/snapwiresnaps/large/tumblr_nloephtOcD1teue7jo1_1280.jpg);
   background-position:center;
   background-attachment: fixed;
@@ -42,7 +42,7 @@ html{
 
 #big_title{
   position:fixed;
-  color:#df1f15;
+  color:#000000;
   font-weight: bold;
   font-size: 2.25em;
 }
@@ -60,7 +60,7 @@ html{
   text-align: center;
   position:fixed;
   top:15em;
-  color:#df1f15;
+  color:#000000;
   font-weight: bold;
 }
 
@@ -74,15 +74,18 @@ html{
 #bio{
   padding:1em;
   position:fixed;
-  bottom:15%;
+  bottom:2em;
   margin-left: -1.5%;
+  width:80em;
 }
 
 #bio p{
-  text-align: center;
-  font-size:1.2em;
-  line-height: 0.9em;
+  font-size:2.5em;
   font-weight: bold;
+  color:#000000;
+  text-align: center;
+  color:#ee347b;
+  text-shadow: 1px 1px black;
 }
 
 #whitespace{
@@ -104,7 +107,7 @@ html{
   bottom:0;
   width:80em;
   padding:0.5em;
-  background-color: #497ed8;
+  background-color: pink;
   background-position: fixed;
   background-repeat: no-repeat;
   background-attachment: absolute;
@@ -127,7 +130,7 @@ html{
 
 #nav ul li a{
   text-decoration: none;
-  color:#361c02;
+  color:#000000;
   text-align: center;
   font-size:1.5em;
   font-weight: bold;
