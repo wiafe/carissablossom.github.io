@@ -6,23 +6,16 @@
 html{
   font-family: league-gothic, Calibri, sans-serif;
   color:#361c02;
+  background-image:url(https://splashbase.s3.amazonaws.com/snapwiresnaps/large/tumblr_nloephtOcD1teue7jo1_1280.jpg);
+  background-position:center;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
 
-  /*background-image: url(https://dl-web.dropbox.com/get/YPO-WPO%20Mt%20Fuji%202014/IMG_2105.JPG?_subject_uid=308975299&w=AADNhM51FH3ePH0ezp28KRkhJG0hguiioLGX8yu7ngcgrA)*/
 }
 
-/*#titleopacity{
-  background-color: white;
-  opacity:0.5;
-  position:absolute;
-  z-index: -1;
-  padding:3.5em;
-  width:32%;
-  bottom:64%;
-  margin-left: 30%;
-}*/
 #social_media{
-  position:absolute;
-  left:80%;
+  position:fixed;
+  left:65em;
   top:0;
 }
 
@@ -42,41 +35,41 @@ html{
 }
 
 #social_media ul li a img{
-  width:2em;
-  height:2em;
+  width:30px;
+  height:30px;
 
 }
 
 #big_title{
-  width:100%;
-  text-align: center;
-  position:absolute;
-  top:10%;
-  font-size: 2.25em;
-  z-index: 1;
-  color: #df1f15;
-  font-weight: bolder;
-  text-shadow: 1px 1px #361c02;
-}
-
-#subtitle{
-  width:100%;
-  text-align: center;
-  position:absolute;
-  top:27%;
-  z-index: 2;
+  position:fixed;
   color:#df1f15;
   font-weight: bold;
-  text-shadow: 1px 1px #361c02;
+  font-size: 2.25em;
 }
 
-#home_img{
-  position:absolute;
-  top:-10%;
-  z-index:-6;
-  margin-left: -2%;
-  width:103%;
+#big_title h1{
+  position:fixed;
+  text-align:center;
+  top:1.8em;
+  left:5.5em;
 }
+
+
+#subtitle{
+  width:80em;
+  text-align: center;
+  position:fixed;
+  top:15em;
+  color:#df1f15;
+  font-weight: bold;
+}
+
+#subtitletitle h2{
+  position:fixed;
+  text-align:center;
+  left:5.5em;
+}
+
 
 #bio{
   padding:1em;
@@ -94,22 +87,30 @@ html{
 
 #whitespace{
   background-color: white;
-  opacity:0.5;
+  opacity:0.3;
   position:absolute;
   z-index: -1;
-  bottom:15%;
-  padding:5em;
-  width:100%;
+  bottom:0;
+  width:80em;
+  height:85em;
   margin-left: -2%;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: absolute;
 }
 
 #nav{
   position:absolute;
   bottom:0;
-  width:103%;
+  width:80em;
   padding:0.5em;
   background-color: #497ed8;
-  margin-left: -2%;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  margin-left: -1em;
+  max-height: 4em;
+  float:none;
 }
 
 #nav ul{
