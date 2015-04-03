@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays & Hashes: Carissa Blossom Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+<!--PAGE MENU-->
+  <p id="menu" center> <a id="firstlink" href="http://carissablossom.github.io/">Home</a> | <a class="link" href="http://carissablossom.github.io/technical">Technical</a> | <a class="link" href="http://carissablossom.github.io/cultural">Cultural</a> | <a class="link" href="http://carissablossom.github.io/contact">Contact Me</a> </p>
+
+
+<div id="Technical_list">
+    <p class="title">Technical Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/t1-git-blog.html">Version Control, Git & Github</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+    </ol>
+  </div>
+  <div id="Cultural_list">
+    <p class="title">Cultural Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/c1-chefs-kitchen.html">Initial Impressions on DBC Culture</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+     </ol>
+  </div>
+
+  <div id="About_Me">
+    <p id="carissa">Meet Carissa</p>
+    <p><img id="profile" alt="profile photo" src="https://scontent-2.2914.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10994159_10203836808535805_865786660018488194_n.jpg?oh=cc745bcdf1c7b3b2796ede90d2f1e4ef&oe=55BB462C"/></p>
+    <p id="aboutbody">I'm a San Francisco based student at Dev Bootcamp with dreams of becoming a software developer. I was born and raised in Singapore. Besides programming and all things techie, I'm passionate about health, fitness, travel and sci-fi. I'm proud to call myself a marathoner, mountain climber and TKD blackbelt. I dream of one day combining my three main passions, tech, health and fitness, to create something awesome!</p></div>
+
+<div id="whitespace"></div>
+<div id="actual_post">
+<!--POST TITLES-->
+  <h1>Arrays & Hashes</h1>
+  <h2>Technical Post #3</h2>
+  <h4>April 2, 2015</h4>
+
+<!--PARAGRAPHS HERE-->
+  <section>
+    <p>
+      This week we started learning Ruby, and covered a lot of the absolute basic concepts, including:
+      <ul>
+        <li> strings (a bunch of letters, numbers & symbols between quote)</li>
+        <li>integers</li>
+        <li>floats (decimal numbers)</li>
+        <li>methods (the VERBS of Ruby)</li>
+        <li>arrays</li>
+        <li>hashes</li>
+      </ul>
+
+      I'm only going to explain the last two of these topics but if you want to learn more about the basics, I'm recommend trying Codeschool's intro to Ruby course, and reading Pine's Learn to Program book.
+    </p>
+
+    <p>
+        <!--Your second paragraph goes here.-->
+        Now, getting into Arrays & Hashes. For starters, think of an Array as a grocery list and a Hash as a dictionary, or one of those index card holders with labels.
+    </p>
+
+    <p>
+        <!--Your third paragraph goes here.-->
+        Now back to our grocery list between square brackets, also known as an ARRAY. This particular grocery list already has numbers on the side and a space for your title at the top.For some weird reason, when your mom made the template for your grocery list, she started the numbering at ZERO instead of ONE. When you want to add items to your list, you write them into each of the numbered slots on the list. Later, if you want to, you can reference a place on your grocery list by the number on the side.
+    </p>
+
+    <p>
+        <!--Your fourth paragraph goes here.-->
+        Now, an array is JUST like that grocery list, all we have to do is swap in the Ruby terms for the grocery terms. An array is wrapped in SQUARE BRACKETS. The NUMBERS that you use to reference your grocery items are called INDEXES. When you print an array, you wont see these indexes, but the first element in the list is in index 0, and if you type in your array name, followed by the index number in square brackets, Ruby will print out the VALUE or ELEMENT (your grocery item) stored at that index.
+    </p>
+
+    <p>
+        Let's see an array as an example:
+        <ul>
+          <li>grocery_array = ["carrots", "potatoes", "bread", "milk"]</li>
+        </ul>
+        If I wanted to return the first item on my array, I could do so with: grocery_array[0]. There are also a variety of methods available for arrays. Rather than memorizing them, you can use Ruby docs as your reference, and look through their list of methods. Just to get you started, here are some of my favorites:
+        <ul>
+          <li>.new - creates a new array. array_name = Array.new. The capital A in Array.new is important for proper formatting. </li>
+          <li>.push() - adds something to the end of an array. note that it requires a parameter specifying what you want to add</li>
+          <li>.pop -removes the last element in the array</li>
+          <li>.each -followed by a |variable| and a code block, allows you to plug each value in as the variable and run the following code block on it.</li>
+    </p>
+
+    <p>
+        <!--Your fifth paragraph goes here.-->
+        Now, hopefully you have a pretty good understanding of Arrays now, so let's move on to Hashes.
+    </p>
+    <p>
+        <!--Your fifth paragraph goes here.-->
+        A Hash is like an array in some ways:
+        <ul>
+          <li>It's a list of things</li>
+          <li>It consists of a series of values and a way of referencing them</li>
+          <li>We can create an empty one with the .new method</li>
+        </ul>
+        While Hashes and Arrays are both lists, a Hash is a collection of KEY-VALUE PAIRS and the list is unordered. Hashes are written in the following format:
+        <ul>
+          <li> hash_name = {key => value, key => value}</li>
+        </ul>
+        Remember that concept of indexes as the reference points for values in arrays? Well, Hashes don't have a specific order, and they use KEYS instead of indexes as references for the values. For certain purposes, this can be even better. Indexes are limiting because it will always just be a list of numbers, but with hashes, you can categorize things in whatever way you want! Remember my dictionary analogy? Let's go into that in a bit more detail. Here's a baby dictionary. Let's assume Baby is learning the alphabet, so they only know one word for each alphabet letter.
+        <ul>
+          <li>dictionary_hash = {:a => "apple", :b => "banana", :c =>"cat"}</li>
+        </ul>
+        You get the idea. Your keys and values can be made up of any types of OBJECTS you want: strings, integers, floats, variables or even symbols (that's what the keys with the : in front are! I'd recommend you only use these for keys, not values though).
+    </p>
+    <p>
+        <!--Your fifth paragraph goes here.-->
+        Just like Arrays, Hashes have a whole list of methods that can be used with them. Some of them are the same as Array methods (.new is one of them!), and others are unique to Hashes. I'd recommend you spend some time checking out Ruby Docs to see all the things you can do, and use this as a reference point when you want to find methods, but I'll once again list a couple favorites:
+        <ul>
+          <li>.new - creates an empty Hash. Format is: hash_name = Hash.new (remember the capital H in Hash.new!)</li>
+          <li>.values - returns an array of only the values. There's another one just like it called .keys that returns an array of just the keys.</li>
+          <li>.fetch(key) -returns the value associted with the given key in the hash. It will give an error if the key isn't found, or take an optional second parameter to return instead if the key isn't found.</li>
+          <li>.merge(other_hash) - takes the two hashes and adds their contents together, creating a new hash. If you add a ! after the word merge, it will alter the first hash and turn it into the combined hash (rather than returning a new hash with the combined key/value pairs)</li>
+    </p>
+    <p>
+        <!--Your fifth paragraph goes here.-->
+        So tell me, are you ready to start trying out these concepts on your own? Play around, experiment with arrays and hashes, and figure out which methods are YOUR favorites!
+    </p>
+  </section>
+</div>
+</main>
+
