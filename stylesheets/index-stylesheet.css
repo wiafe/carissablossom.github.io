@@ -1,145 +1,96 @@
-@font-face{
-  font-family:league-gothic;
-  src:url(https://github.com/carissablossom/league-gothic/blob/master/webfonts/leaguegothic-regular-webfont.woff);
+html{
+  width: 1250px;
 }
 
-html{
-  font-family: league-gothic, Calibri, sans-serif;
-  color:#000000;
-  background-image:url(https://splashbase.s3.amazonaws.com/snapwiresnaps/large/tumblr_nloephtOcD1teue7jo1_1280.jpg);
-  background-position:center;
-  background-attachment: fixed;
-  background-repeat:no-repeat;
+#page{
+  height:100%;
+  width:100%;
+  position: absolute;
+}
+
+#background img{
+  margin-left: -1%;
+  position:fixed;
+  z-index: -1;
+  margin-top: -1%;
+  width:1250px;
 
 }
 
 #social_media{
-  position:fixed;
-  left:65em;
+  position: absolute;
+  right:0;
   top:0;
-
+  margin-right: 8px;
+  margin-top: 8px;
 }
 
 #social_media ul{
   list-style-type: none;
-  margin:0;
-  padding:0;
 }
 
-#social_media ul li{
-  display:inline;
-}
-
-
-#social_media ul li a{
-  text-decoration: none;
-}
-
-#social_media ul li a img{
+#social_media img{
   width:30px;
   height:30px;
 
 }
 
 #big_title{
-  position:fixed;
-  color:#000000;
-  font-weight: bold;
-  font-size: 2.25em;
-
-}
-
-#big_title h1{
-  position:fixed;
   text-align:center;
-  /*top:1.8em;
-  left:5.5em;*/
-  width:100%;
-  padding-top:14%;
-  margin-bottom: 2%;
+  font-weight: bold;
+  font-size: 2em;
+  width: 1250px;
+  position: relative;
+  top:130px;
 }
-
 
 #subtitle{
-  width:100%;
   text-align: center;
-  position:fixed;
-  /*top:15em;*/
-  padding-top:23%;
-  color:#000000;
   font-weight: bold;
-}
-
-#subtitletitle h2{
-  position:fixed;
-  text-align:center;
-  left:5.5em;
-  margin-top: 2%;
-}
-
-
-#bio{
-  position:fixed;
-  bottom:2em;
-  width:100%;
-  padding-bottom:3%;
-}
-
-#bio p{
-  font-size:2.5em;
-  font-weight: bold;
-  color:#000000;
-  text-align: center;
-  color:#ee347b;
-  text-shadow: 1px 1px black;
-
-}
-
-#whitespace{
-  background-color: white;
-  opacity:0.35;
-  position:absolute;
-  z-index: -1;
-  bottom:0;
-  width:80em;
-  height:85em;
-  margin-left: -2%;
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-attachment: absolute;
+  width: 1250px;
+  position: relative;
+  top:100px;
 }
 
 #nav{
-  position:absolute;
-  bottom:0;
-  width:101%;
-  padding-bottom: 0.7%;
   background-color: pink;
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-attachment: absolute;
-  margin-left: -1em;
-  max-height: 4em;
-  float:none;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  font-size: 1.5em;
+  width: 1250px;
+  font-weight: bold;
+  margin-left: -1%;
+
 }
 
 #nav ul{
   list-style-type: none;
-  margin:0;
-  padding:1.5em;
+  text-align: center;
 }
 
-#nav ul li{
-  display:inline;
-  padding:1em;
+#nav li{
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
-
-#nav ul li a{
+#nav a{
   text-decoration: none;
   color:#000000;
-  text-align: center;
-  font-size:1.5em;
-  font-weight: bold;
 }
 
+#tagline {
+  color:#ee347b;
+  text-shadow: 1px 1px black;
+  font-size:35px;
+  font-weight: bold;
+  position:relative;
+  top:200px;
+  width: 1200px;
+
+}
+
+#tagline p{
+  text-align: center;
+}
