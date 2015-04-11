@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+<!--PAGE MENU-->
+  <p id="menu" center> <a id="firstlink" href="http://carissablossom.github.io/">Home</a> | <a class="link" href="http://carissablossom.github.io/technical">Technical</a> | <a class="link" href="http://carissablossom.github.io/cultural">Cultural</a> | <a class="link" href="http://carissablossom.github.io/contact">Contact Me</a> </p>
+
+
+<div id="Technical_list">
+    <p class="title">Technical Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/t1-git-blog.html">Version Control, Git & Github</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+    </ol>
+  </div>
+  <div id="Cultural_list">
+    <p class="title">Cultural Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/c1-chefs-kitchen.html">Initial Impressions on DBC Culture</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+     </ol>
+  </div>
+
+  <div id="About_Me">
+    <p id="carissa">Meet Carissa</p>
+    <p><img id="profile" alt="profile photo" src="https://scontent-2.2914.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10994159_10203836808535805_865786660018488194_n.jpg?oh=cc745bcdf1c7b3b2796ede90d2f1e4ef&oe=55BB462C"/></p>
+    <p id="aboutbody">I'm a San Francisco based student at Dev Bootcamp with dreams of becoming a software developer. I was born and raised in Singapore. Besides programming and all things techie, I'm passionate about health, fitness, travel and sci-fi. I'm proud to call myself a marathoner, mountain climber and TKD blackbelt. I dream of one day combining my three main passions, tech, health and fitness, to create something awesome!</p></div>
+
+<div id="whitespace"></div>
+<div id="actual_post">
+<!--POST TITLES-->
+  <h1>Efficiency with Enumerables:</h1>
+  <h2>Enumerables & the Cycle Method</h2>
+  <h4>Technical Post #4</h4>
+
+<!--PARAGRAPHS HERE-->
+  <section>
+    <p>
+      <!--Your first paragraph goes here.-->
+      Enumerables appeared as a topic last week as some unknown Class/Module that we were supposed to use in one exercise while refactoring our code. At the time, I was using Enumerable methods without really knowing what an enumerable was, or why I was able to use its methods on other classes. There is no .map method in Arrays, but somehow I could use this method on them. I'm pretty use I'd get an error message if I tried using a string method on an integer, or vice versa.
+    </p>
+    <p>
+      It turns out, who reason Enumerables & its methods are a bit more flexible is because it is related to Modules. As a short explanation, Modules basically solve the problem of multiple inheritance (common in other languages) for Ruby. Classes only allow for single inheritance, and Modules act like containers for groups of methods from different classes, allowing them to get 'mixed-in' together. Another interesting fact about Enumerables I discovered is that Classes can only use Enumerables if it as a .each method defined. This is important to note when we think about which of our basic classes (or classes we create) we may want to use Enumerables with. If .each doesn't exist naturally, we would have to first define this method.
+    </p>
+
+    <p>
+        <!--Your second paragraph goes here.-->
+        So what exactly is 'Enumerables'? Enumerables is pretty much just a class full of loops & iterators! As the Ruby Bastards Book explains, this MODULE <strong>provides a set of methods to traverse, search, sort and manipulate collections.</strong> Enumerable methods provide easier, more efficient and more capable ways of traversing through code.
+
+    </p>
+
+    <p>
+        <!--Your third paragraph goes here.-->
+        Out of the Enumerable methods available to us, there are a couple that I find to be particularly useful so far.
+        <ul>
+          <li><strong>each_with_index</strong>- functions just like our favorite .each method, but also allows for reference to the index</li>
+          <li><strong>cycle</strong> - this method acts like a .times with a .each inside of it. Cycle takes an array, pulls out each element and executes it in the code block, then continues through every element in the array. THEN, when it's done, it goes back and does it again! Cycle takes an optional parameter (along with the code block), that tells it how many times to cycle through the code. If you don't give it a number, it will cycle through infinitely. You can break this infinite cycle with an IF clause for when to BREAK. Keep in mind, that because cycle acts like .EACH inside each loop, it does not alter the actual array element and return an altered array.</li>
+          <li><strong>map</strong> - this is useful when you want to manipulate each element in an array, and have the new array returned without changing the original. This is different from .each because each doesn't actually alter the element(s) in the iteration. With .each, you would have to use .each_index (assuming you were staying away from enumerable methods) to manipulate and then reassign to that index. Map also has the nifty addition with ! on the end of the method, which alters the original array. Let's see this method in action:
+            <ul>
+              <li>zodiac = ['rat','ox','tiger','rabbit','dragon','snake','horse','sheep','monkey','rooster','dog','pig'].map do |zodiac_animal|</li>
+              <ul>
+                <li>animal.upcase</li>
+              </ul>
+              <li>end</li>
+              <li>puts zodiac.join(", ")
+            </ul>
+          </li>
+        </ul>
+    </p>
+
+    <p>
+      Now that you've gotten to see how .map works, go back and try out .cycle and .each_with_index! Are there any other methods that you favor in the Enumerable module?
+
+    </p>
+
+  </section>
+</div>
+</main>
+
