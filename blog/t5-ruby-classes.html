@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+<!--PAGE MENU-->
+  <p id="menu" center> <a id="firstlink" href="http://carissablossom.github.io/">Home</a> | <a class="link" href="http://carissablossom.github.io/technical">Technical</a> | <a class="link" href="http://carissablossom.github.io/cultural">Cultural</a> | <a class="link" href="http://carissablossom.github.io/contact">Contact Me</a> </p>
+
+
+<div id="Technical_list">
+    <p class="title">Technical Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/t1-git-blog.html">Version Control, Git & Github</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+    </ol>
+  </div>
+  <div id="Cultural_list">
+    <p class="title">Cultural Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/c1-chefs-kitchen.html">Initial Impressions on DBC Culture</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+     </ol>
+  </div>
+
+  <div id="About_Me">
+    <p id="carissa">Meet Carissa</p>
+    <p><img id="profile" alt="profile photo" src="https://scontent-2.2914.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10994159_10203836808535805_865786660018488194_n.jpg?oh=cc745bcdf1c7b3b2796ede90d2f1e4ef&oe=55BB462C"/></p>
+    <p id="aboutbody">I'm a San Francisco based student at Dev Bootcamp with dreams of becoming a software developer. I was born and raised in Singapore. Besides programming and all things techie, I'm passionate about health, fitness, travel and sci-fi. I'm proud to call myself a marathoner, mountain climber and TKD blackbelt. I dream of one day combining my three main passions, tech, health and fitness, to create something awesome!</p></div>
+
+<div id="whitespace"></div>
+<div id="actual_post">
+<!--POST TITLES-->
+  <h1></h1>
+  <h2></h2>
+  <h4></h4>
+
+<!--PARAGRAPHS HERE-->
+  <section>
+    <p>
+      <!--Your first paragraph goes here.-->
+      It's in human nature to organize and classify. We have taken the world around us and provided words to refer to them, and then bigger words to refer to groups of things, and even bigger words to refer to groups of groups of things. This propensity to judge, label and categorize is something we do immediately, instinctively, whether we want to or not.
+    </p>
+
+    <p>
+    <!--Your second paragraph goes here.-->
+    Considering how immediate and natural categorizing things is to humans, it only makes sense that when creating a new language, humans would create some way of grouping and categorizing things! In Ruby, they call it CLASSES (well, Modules also group things, but that's a topic for another day).
+    </p>
+    <p>
+    Think about what it would be like if we weren't allowed to group and classify things, and to talk about these groups and make assumptions about the group (what they are like, what they can do, etc) as a whole. Let's take PEOPLE for instance. We refer to people as a group, or class, and hold some basic assumptions about them. Special cases aside, we assume they all use their mouths to speak and eat, their eyes to see, their feet to walk, their hands to grab and hold. These are just a few of the basic assumptions that come to mind when you see something and classify it in your mind as HUMAN or PERSON.
+    </p>
+    <p>
+    Let's use HUMAN as our Ruby class, as an example. We'd define our class like this:
+    <ul>
+      <li>class Human</li>
+      <li>end</li>
+    </ul>
+    Now, there are classes, and then there are subclasses. For instance, HUMAN is a subclass of MAMMALS, which is a subclass of ANIMAL, which is a subclass of LIVING_THINGS. You could clarify this relationship as follows:
+    <ul>
+      <li>class Human < Mammals
+      </li>end
+    </ul>
+  </p>
+    You can also initialize an instance of a method. A specific person is an instance of a method. You'd create the new person with (here I'm giving him a name and an age):
+    <ul>
+      <li>John_Adams = Human.new("John Adams, 50")
+      </li>
+    </ul>
+<p>
+    Within the class, you'd have to include some code so that the class would know what it starts out with. Think of this as the things you are born with. When you are born, you have a name, an age (it's zero at that point, but still), parents. Depending on how you think of people, you might consider 'occupation' a defining trait throughout someone's life. These are your initializing variables.
+</p>
+<p>
+    Attr_accessor allows you to set and then return a variable. The initialize method allows you to initialize certain variables with certain values (either set or given as parameters).
+    <ul>
+      <li>class Human</li>
+      <ul>
+        <li>attr_accessor :age, :name</li>
+        <li>def initialize</li>
+        <li>@age = age</li>
+        <li>@name = name </li>
+        <li>end</li>
+      </ul>
+    </ul>
+
+    You see that <strong>@</strong> symbol in front of the variable names? That means that it's an <strong>INSTANCE VARIABLE</strong>, not a local variable. Local variables only exist within a method. Instance variables can exist between all methods in the same class, but only for one instance of that class. Let's go back to the example to clarify. @age is an instance variable. I can use it in later methods under the Human Class without having to bring it in as a parameter next to the method name. However, John will not have the same as as Jill or Jack, so in that sense, while all 3 have been initialized with the instance variable @age, the instance variable only applies to one instance (ie: John), not ALL humans.
+  </p>
+  <p>
+    For things that apply universally to ALL humans (or to whatever class as a whole), there is a third kind of variable, and a third kind of method to go along with it: <strong>GLOBAL METHODS/VARIABLES</strong>. These methods and variables apply to all instances/people, and are acted out on the class as a whole (the human race). You can't have instance variables inside a global method, because global methods don't have anything to do with specific instances. An initialize method is actually an example of a global method: it's not specific to Jim, John or James. You <strong>.new</strong> a class, not a class object.
+  </p>
+  <p>
+    An instance method, on the other hand, refers to those methods that are acted out on the specific instance/class object. For instance, let's say we want to give Mr. Adams a job. We'd need to create an instance method inside the human class to set (or change) occupations. We could also use this to print information about the person, change things, age him, etc.
+    <ul>
+      <li>def occupation=(job)</li>
+      <li>@job = job</li>
+      <li>end</li>
+      <li> def occupation(job)</li>
+      <li>@job</li>
+      <li>end</li>
+    </ul>
+
+    </p>
+
+    <p>
+        <!--Your third paragraph goes here.-->
+    So to summarize, we've discussed:
+    <ul>
+      <li>what is a class, why we need them and how to create one</li>
+      <li>subclasses</li>
+      <li>initializing a class</li>
+      <li>instance variables</li>
+      <li>attr_accessor</li>
+      <li>instance methods</li>
+      <li>global methods & variables</li>
+    I'd say that's enough to get started! Now that we've covered some of the basics related to classes, the best thing to do next is just try a lot of problems and get a lot of practice!
+    </p>
+
+    <p>
+        <!--Your fourth paragraph goes here.-->
+
+    </p>
+
+  </section>
+</div>
+</main>
+

@@ -1,5 +1,6 @@
 html{
   background-color: #f2f0f0;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/4a/43/f8/4a43f88c4393f691f42400dab982439a.jpg);
 }
 
 
@@ -8,7 +9,7 @@ html{
   top:2em;
   width:101%;
   padding-bottom: 0.7%;
-  background-color: #7FFFD4;
+  background-color: #eec79f;
   background-position: fixed;
   background-repeat: no-repeat;
   background-attachment: absolute;
@@ -38,8 +39,8 @@ html{
 }
 
 #social_media{
-  position:fixed;
-  left:65em;
+  position:absolute;
+  right:0;
   bottom:0;
 
 }
@@ -68,20 +69,37 @@ html{
 h1{
   color:#000000;
   font-size: 3.5em;
-  position:fixed;
+  position:absolute;
   width:100%;
-  padding-top:10%;
+  padding-top:12%;
   text-align: center;
   font-weight: bold;
 }
 
 #textbody{
   position:absolute;
-  padding-top:20%;
-  padding-left:10%;
-  padding-right:10%;
+  margin-top: 19%;
+  padding:5%;
   width:100%;
-  margin-left:1em;
-  margin-right:1em;
+  margin-left:5em;
+  margin-right:5em;
   text-align: justify;
+}
+
+
+
+
+
+#whitespace{
+  background-color: #f2d07f;
+  opacity:0.45;
+  position:absolute;
+  z-index: -1;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  margin-top: 8em;
+  margin-left: 8%;
+  padding:41%;
+
 }
