@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+<!--PAGE MENU-->
+  <p id="menu" center> <a id="firstlink" href="http://carissablossom.github.io/">Home</a> | <a class="link" href="http://carissablossom.github.io/technical">Technical</a> | <a class="link" href="http://carissablossom.github.io/cultural">Cultural</a> | <a class="link" href="http://carissablossom.github.io/contact">Contact Me</a> </p>
+
+
+<div id="Technical_list">
+    <p class="title">Technical Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/t1-git-blog.html">Version Control, Git & Github</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+    </ol>
+  </div>
+  <div id="Cultural_list">
+    <p class="title">Cultural Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/c1-chefs-kitchen.html">Initial Impressions on DBC Culture</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+     </ol>
+  </div>
+
+  <div id="About_Me">
+    <p id="carissa">Meet Carissa</p>
+    <p><img id="profile" alt="profile photo" src="https://scontent-2.2914.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10994159_10203836808535805_865786660018488194_n.jpg?oh=cc745bcdf1c7b3b2796ede90d2f1e4ef&oe=55BB462C"/></p>
+    <p id="aboutbody">I'm a San Francisco based student at Dev Bootcamp with dreams of becoming a software developer. I was born and raised in Singapore. Besides programming and all things techie, I'm passionate about health, fitness, travel and sci-fi. I'm proud to call myself a marathoner, mountain climber and TKD blackbelt. I dream of one day combining my three main passions, tech, health and fitness, to create something awesome!</p></div>
+
+<div id="whitespace"></div>
+<div id="actual_post">
+<!--POST TITLES-->
+  <h1></h1>
+  <h2></h2>
+  <h4></h4>
+
+<!--PARAGRAPHS HERE-->
+  <section>
+    <p>
+      <!--Your first paragraph goes here.-->
+      This week, I'm going to discuss Inheritance versus Composition, and attempt to answer the following questions:
+      <ul>
+        <li>What is Ruby inheritance?</li>
+        <li>What is composition?</li>
+        <li>Examples to illustrate how to use each</li>
+        <li>Examples from this week's work</li>
+      </ul>
+
+    </p>
+
+    <p>
+        <!--Your second paragraph goes here.-->
+        Objects, presumably in some class, get their behaviours from the class's individual/composed methods, as well as those of their ancestor classes. The Object class is always at the top of the inheritance class (with only the extremely simple/broad Basic Object class above it).
+    </p>
+
+    <p>
+        <!--Your third paragraph goes here.-->
+        Inheritance, also known as differential programming, is a relation between two classes: the derived/child/subclass and the base/parent/superclass. It’s very similar in concept to the general-specific relationship that exists in real life. For instance, humans or apes are more specific instances of mammals, so they would be SUBCLASSES to the MAMMALS class, and mammals would be the SUPERCLASS of humans and apes. In Ruby, a class can only inherit from a single other class, but you can make up for this single inheritance with modules (groups of methods not based on classes). If you're unsure of what the superclass of your current class is, there is a is_a?(suspected_superclass) method.
+    </p>
+
+    <p>
+        <!--Your fourth paragraph goes here.-->
+        The benefit of inheritance is that classes lower down the hierarchy get the features of those higher up, but can also add specific features of their own. Rather than exhaustively define every characteristic of every new class, we need only to append or to redefine the differences between each subclass and its super-class. For instance, the class Cat doesn't need a method for 'breathe' or 'eat' because it is part of the Animals class, and all Animals can breathe and eat. Cat can inherit breathing and eating from its superclass. As for things specific to cats, like purring, this method would have to be composed inside the cat class, but we'll get to that later.
+
+        class Animal
+          def breathe
+            "breathing in and out"
+          end
+
+          def eat
+            "nom nom nom"
+          end
+        end
+
+        class Cat < Animal
+          def purr
+            "purrrrrr"
+          end
+        end
+
+      kitty = Cat.new
+      puts kitty.breathe
+      puts kitty.eat
+      puts kitty.purr
+
+    </p>
+
+    <p>
+        <!--Your fourth paragraph goes here.-->
+        While inherited methods are excellent, useful tools, sometimes we want to mess around with them for specific subclasses. This kind of rewriting comes in two forms: overwriting a method (changing it completely), or adding to a method. The first kind, overwriting, becomes necessary when there is a class that does something a bit differently than most of its general category. Kiwis, for instance, are birds that can't fly. You'd want to rewrite your flight method so nobody makes your virtual kiwi try to fly through the air. You could do this by writing the method, with new content, in the subclass.
+        Class Kiwi < Birds
+          def fly
+            "I wish I could fly!"
+          end
+        end
+
+        As for adding to a method, Ruby makes this easy through the keyword <strong>super</strong>. Super is used inside of the method you are trying to add to. It runs and returns whatever would result from the method if it was run from the superclass. You can have all the existing material, and can work with it and add what you like to create your improved/more specific method for the subclass. Be aware that you can only 'super' methods, not variables. A method being supered might return a variable, that you then manipulate, but it has to be a method from the superclass that you are adding to.
+        class Animal
+          def move
+               “I’m moving"
+          end
+        end
+
+        class Bird < Animal
+          def move
+               super + “by flapping my wings"
+          end
+        end
+
+        puts Animal.new.move
+        puts Bird.new.move
+    </p>
+
+    <p>
+        <!--Your fourth paragraph goes here.-->
+        What about composition? Well, you’ve already become well acquainted with composed methods. They are the methods you create and write within a class! Interestingly, one classes composed methods will become the inherited methods of any subclasses that you create or that exist below it.You can actually have your composition be even more specific than methods created for the class in question (rather than inherited from an ancestor). You can also individually modify objects/class instances, and add methods on a per object basis (although this rarely happens). You can also reopen a class and add more methods later, after they have been written. You’re already very familiar with composition (even though you didn’t realise it), but here is an example, just to refresh. Drive is a composed method for humans, that doesn’t exist for Animals. You can call the inherited method ‘move’ on a human, and you can also call ‘drive’ on humans. Drive is a method that only exists for the human class (and its non-existence subclasses that will inherit it), not for the Animal class.
+        class Animal
+          def move
+             “I’m moving"
+          end
+        end
+
+
+        class Human < Animal
+           def drive #this is your composition method!
+              “I’m using a vehicle for transport!"
+           end
+        end
+    </p>
+    <p>
+      Where have we seen and used composition and Inheritance this week? Well, let’s deal with the obvious one first! We’ve used composition EVERYWHERE! Every time we created a new functionality within a class for one of the challenges, this was COMPOSITION. As for inheritance, this would appear in cases where we were using multiple classes that got increasingly specific. In my own code, I did not have an instance where I was working with multiple cascading classes, where one was more specific subclass of the other, however, the BINGO challenge that we have worked on over the last two weeks could have become an illustration of inheritance if we had included the two Bingo classes and their boards together in one document (or used a ‘require’ statement to refer to the first challenge in the second challenge’). The bingo board creator class, which created the bingo board, could have been a superclass, and the bingo scorer, that checked if we had BINGO, could have been the subclass. The pretty_board method could then be an inherited method in bingo_scorer that got called on a bingo_scorer object.
+    </p>
+  </section>
+</div>
+</main>
+
