@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+  <title>Javascript vs Ruby: Carissa Technical #7</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+<!--PAGE MENU-->
+  <p id="menu" center> <a id="firstlink" href="http://carissablossom.github.io/">Home</a> | <a class="link" href="http://carissablossom.github.io/technical">Technical</a> | <a class="link" href="http://carissablossom.github.io/cultural">Cultural</a> | <a class="link" href="http://carissablossom.github.io/contact">Contact Me</a> </p>
+
+
+<div id="Technical_list">
+    <p class="title">Technical Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/t1-git-blog.html">Version Control, Git & Github</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+    </ol>
+  </div>
+  <div id="Cultural_list">
+    <p class="title">Cultural Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/c1-chefs-kitchen.html">Initial Impressions on DBC Culture</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+     </ol>
+  </div>
+
+  <div id="About_Me">
+    <p id="carissa">Meet Carissa</p>
+    <p><img id="profile" alt="profile photo" src="https://scontent-2.2914.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10994159_10203836808535805_865786660018488194_n.jpg?oh=cc745bcdf1c7b3b2796ede90d2f1e4ef&oe=55BB462C"/></p>
+    <p id="aboutbody">I'm a San Francisco based student at Dev Bootcamp with dreams of becoming a software developer. I was born and raised in Singapore. Besides programming and all things techie, I'm passionate about health, fitness, travel and sci-fi. I'm proud to call myself a marathoner, mountain climber and TKD blackbelt. I dream of one day combining my three main passions, tech, health and fitness, to create something awesome!</p></div>
+
+<div id="whitespace"></div>
+<div id="actual_post">
+<!--POST TITLES-->
+  <h1></h1>
+  <h2></h2>
+  <h4></h4>
+
+<!--PARAGRAPHS HERE-->
+  <section>
+    <p>
+      <!--Your first paragraph goes here.-->
+      This week I'm going to be talking about the difference between Ruby and Javascript, and what it's been like learning JS after four weeks focusing only on Ruby.
+
+    </p>
+
+    <p>
+        <!--Your second paragraph goes here.-->
+        Maybe this will change as I get more comfortable with the language, but so far, Javascript just seems like a more frustrating version of Ruby. </p>
+      <p>
+        Things I really miss about Ruby? </p>
+      <p>
+        First and foremost, the ERROR messages! I know, sounds crazy, but I really liked how easy it was to identify and fix simple errors in the code based on what error message appeared. With Javascript, I may have just missed out an extra curly brace or forgot a set of parentheses, or made a much more complicated problem, but the error message, if one even pops up, will be vague at best. Javascript is SO broad that it lets bits of code slide even if it's not doing what we want it to do.
+
+        In my opinion, I'd rather deal with Ruby's insistence on using .to_i or .to_f or .to_a. At least then, I know that my objects aren't going to change class without my say-so. It's better than having the computer let my code pass but give me strange responses when I try adding strings and numbers. </p>
+
+      <p> The second thign I miss from Ruby is Rubydocs. W3schools does have a somewhat similar list that talks about the various types within Javascript and what you can do within each type, but over the last month, I have become very dependent on Rubydocs to see what build-in methods I can make use of when writing code. The great thing is that there are SO many of them! I'm still a beginner, and I'm hoping that Javascript also has lots of methods built-in, and there is some place I can look to reference them all that is more indepth than W3schools, but in the meantime, I will be missing Rubydocs and wishing someone could direct me to a magical Javascriptdocs site (because let's face it, Rubydocs kind of is magic...)</p>
+
+      <p>
+        The third thing I miss: the relative lack of punctuation! Creating a method in Ruby just requires a 'def' followed by the method name and a parameter in parentheses. In Javascript, methods are called functions, and require a lot more notation. For starters, the method name comes first, preceeded only by the word 'var' (another extra bit of notation, needed to let the program know you are creating a variable). After the method name comes an equals sign, the keyword function (equal to 'def' in ruby) and parentheses which are mandatory, regardless of whether you are brining in a parameter or not. Unfortunately, you're not done. You still have to put the internal function code between curly braces.
+        Let's view these two ways of creating a method:
+          def Ruby
+            some code
+          end
+
+          var Javascript = function(){
+            some code
+          }
+        Just to drive the point home, let's count the number of extra steps Javascript makes us take just to create a simple function:
+        <ul>
+          <li>var - needed to declare a variable name is being created </li>
+          <li> equals - instead of def MethodName, you have to set the variable you created equal to the function</li>
+          <li> parentheses after function - optional in Ruby, mandatory in JS</li>
+          <li> curly braces - Ruby requires you to declare 'end', but Javascript makes you wrap all the internal code in {} instead. </li>
+        </ul>
+
+    </p>
+
+    <p>
+        <!--Your third paragraph goes here.-->
+        There is one area of Javascript that, putting the name they give it aside, I think I actually like BETTER than Ruby's version: Hashes! Maybe it's because Ruby considers everything to be an Object, but I have a bit of trouble calling JS's hashes 'objects', and then having to use more specific words (data type, literal, etc) to refer to anything else. That aside, the notation for JS's object literals is a lot easier and faster to type. Instead of '=>' in between the name (key in Ruby) and property (value in Ruby), you just put a colon in between. The notation for accessing the properties in an object is very similar to Ruby as well. You can use the object's variable name, followed by the name in square brackets and it will return the property associated with that name. Just like with Ruby, you can also create a new name, property pair using the square bracket notation, followed by an equal and the property you want associated with the name.
+    </p>
+
+    <p>
+        <!--Your fourth paragraph goes here.-->
+      In Ruby, Arrays are like Hashes, but they keys are not written and instead the values have indices (starting from 0)that can be used to access the values. Javascript's Arrays appear to be exactly the same, except Arrays aren't just similar to Hashes, they are actually a specific case that belong to the same type ('class' in Ruby). This presumably means that Arrays and Hashes have the same built-in functions available to them, which could be easier for beginners trying to learn the language.
+    </p>
+
+    <p>
+        <!--Your fourth paragraph goes here.-->
+        To give Javascript further credit, I do appreciate the way numbers are all one type, instead of having so many different categories: Fixnum, Bignum, Integer, Float... Numbers, plus Math functions is definitely simpler!
+    </p>
+
+    <p>
+      I definitely wouldn't say that I am a FAN of Javascript yet, at least not in comparison to how much I enjoy Ruby, but I am still just starting out! There is no doubt that the language is extremely useful, something I want to get good at. Hopefully, it will become more enjoyable as we go along. One thing I am very appreciative of is how much my knowledge of Ruby has helped me to understand JS. Despite the differences, many of which seem somewhat annoying at this point, I was able to translate a lot of Javascript code, and create more complicated methods but thinking about how I would accomplish the problem in Ruby, and then seeing what the Javascript equivalent was. This skill of using the languages I know to decipher new languages is, in my opinion, the REAL skill we are learning this week, and one I am REALLY excited to master.
+
+  </section>
+</div>
+</main>
+
