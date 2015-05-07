@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+<!--PAGE MENU-->
+  <p id="menu" center> <a id="firstlink" href="http://carissablossom.github.io/">Home</a> | <a class="link" href="http://carissablossom.github.io/technical">Technical</a> | <a class="link" href="http://carissablossom.github.io/cultural">Cultural</a> | <a class="link" href="http://carissablossom.github.io/contact">Contact Me</a> </p>
+
+
+<div id="Technical_list">
+    <p class="title">Technical Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/t1-git-blog.html">Version Control, Git & Github</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+    </ol>
+  </div>
+  <div id="Cultural_list">
+    <p class="title">Cultural Posts</p>
+    <ol>
+      <li><a class="postlinks" href="http://carissablossom.github.io/blog/c1-chefs-kitchen.html">Initial Impressions on DBC Culture</a></li>
+      <!--<li><a class="postlinks" href="">post 2 title</a></li>-->
+     </ol>
+  </div>
+
+  <div id="About_Me">
+    <p id="carissa">Meet Carissa</p>
+    <p><img id="profile" alt="profile photo" src="https://scontent-2.2914.fna.fbcdn.net/hphotos-xfp1/v/t1.0-9/10994159_10203836808535805_865786660018488194_n.jpg?oh=cc745bcdf1c7b3b2796ede90d2f1e4ef&oe=55BB462C"/></p>
+    <p id="aboutbody">I'm a San Francisco based student at Dev Bootcamp with dreams of becoming a software developer. I was born and raised in Singapore. Besides programming and all things techie, I'm passionate about health, fitness, travel and sci-fi. I'm proud to call myself a marathoner, mountain climber and TKD blackbelt. I dream of one day combining my three main passions, tech, health and fitness, to create something awesome!</p></div>
+
+<div id="whitespace"></div>
+<div id="actual_post">
+<!--POST TITLES-->
+  <h1></h1>
+  <h2></h2>
+  <h4></h4>
+
+<!--PARAGRAPHS HERE-->
+  <section>
+    <p>
+      <!--Your first paragraph goes here.-->
+      Regular expressions are special string based codes used to describe searching patterns within a file, database or other document.A regular expression, also known as a 'regex' or 'regexp', is a PATTERN that describes a certain amount of text It transcends coding languages, and can be used in Ruby, Javascript, Python and more.</p>
+
+      <p> A regular expression can be as simple as literal text, (ie: 'blue'). When you search these patterns you get MATCHES. A match is a piece of text, sequence of bytes or group of characters that the regex processing software found to match the regular expression's pattern. The regex processing software refers to the 'engine' that can PROCESSS the regexes, such as Ruby or Python. Although the exact way of callling regexes might vary from program/language to language, the regular expressions themselves stay the same. </p>
+
+      <p> The reg ex patterns we are searching are not always as simple as trying to find 'blue'. Most of the time, our searches are more complex and the regex ends up looking more like this:
+        \b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b
+      Believe it or not, this complicated string is to search for email addresses.</p>
+
+      <p> I have some basic facts to start searching below.
+        <ol>
+          <li> Regular expressions are started and ended wtih forward slashes: /. The 'search codes' go in between. </li>
+          <li> Single Character: The most basic type of regex is a single letter, like 'a'. If you search for 'a'  in 'Jack and Jill', it will return the first occcurrence in the string: the 'a' in Jack.</li>
+          <li> Character Pairs: Let's say you want to see an instance of TWO(or more) possible letters. [ab] would return the first instance of EITHER a OR b, whichever appeared first </li>
+          <li>Character Ranges: You can specify ranges or even sets of ranges with a hyphen. [0-9] gives you the first digit, [0-9a-z] gives you the first lowercase letter or number. Uppercase and lowercase letters are considered separate. </li>
+          <li> A single character followed by [^x] will give you any set of two characters that start with the given single character</li>
+          <li>[^a-z] gives you a range of characters to IGNORE. The above would give you uppercase letters, numbers, spaces and symbols.</li>
+          <li>Use parentheses to get GROUPS of characters (as opposed to square brackets which has them as options). (abc) will only return instances that
+          <li> \d matches any single digit</li>
+          <li> \w matches any single letter </li>
+          <li> \s matches any single whitespace</li>
+          <li> \b refers to word boundaries</li>
+          <li> . matches any single character except a line break, but is used less on its own and more in the middle of a word with a variable letter: like gr.y which could return gray, grey, gr!y, etc.</li>
+          <li>The caret or anchor (^) stands for the start of the line. It indicates that we are interested in a pattern from the very beginning of a given line.</li>
+          <li>Based on the regex engine you are using, there are different ways to look up multiple instances. In text editor,for instance, you have 'next' and 'replace'. But what if you want to look up multiple instances without the 'next' button or its equivalent?
+            <ul>
+              <li>a* gives you 0 or more instances</li>
+              <li>a+ gives you 1 or more instances</li>
+              <li>a? gives you 0 or 1 instances</li>
+              <li>a{#}, with # replaced by any number, gives you exactly that number of instances</li>
+              <li>a{1,3} gives you between 1 and 3 instances</li>
+              <li>a+? will match as few as possible</li>
+            </ul>
+          </li>
+          <li> You can also use | as 'OR', to match one combo OR another.</li>
+
+    </p>
+
+    <p>
+        <!--Your second paragraph goes here.-->
+        Let's go back to that scary looking regex from the beginning of this post. \b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b. We can now break this down and decipher it.
+        <ul>
+          <li>\b refers to word boundaries</li>
+          <li>the first set between brackets uses RANGES and SETS. It says look for A-Z, digits 0-9, and the symbols (. % + -). The second set follows the same pattern.</li>
+          <li>the + spreads the search so it will return as many consecutive characters that meet the search as possible until it encounters something that doesn't.</li>
+          <li>The @ just refers to the @ symbol from an email. </li>
+          <li>[A-Z]{2,4} looks for groups of capital letters that are between 2 and 4 characters long</li>
+        </ul>
+      It's cool when something incomprehensible becomes clear? Head over to www.regexr.com to start trying our regular expressions on your own!
+    </p>
+
+    <p>
+        <!--Your third paragraph goes here.-->
+
+    </p>
+
+    <p>
+        <!--Your fourth paragraph goes here.-->
+
+    </p>
+
+  </section>
+</div>
+</main>
+
