@@ -1,129 +1,88 @@
+
 html{
-  font-family: Helvetica, Arial, sans-serif;
-  background-image:url(https://s-media-cache-ak0.pinimg.com/736x/4a/43/f8/4a43f88c4393f691f42400dab982439a.jpg);
-  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
+
+
 
 /*MENU BAR*/
 #menu{
-  padding:1em;
-  background-color: #eec79f;
-  color: #000000;
-  position:absolute;
-  width:100%;
+  text-align: center;
+  font-size: 24px;
 }
 
 .link{
-  font-size:3vw;
-  font-weight: bold;
-  color:black;
-  margin:1em;
-  color: #000000;
+
 }
 
 #firstlink{
-  margin-left:12vw;
-  font-size:3vw;
-  font-weight: bold;
-  color:black;
-  margin-right:1em;
-  color: #000000;
+
 
 }
 /*END MENU BAR*/
 
 /*POST LISTS*/
+
 #Technical_list{
-  width:17%;
-  text-align:center;
-  background-color: #eec79f;
-  position:absolute;
-  top:8.8em;
-  font-size: 1.2vw;
-}
+
+}*/
 
 #Cultural_list{
-  width:17%;
-  text-align:center;
-  margin-top: 3%;
-  background-color: #eec79f;
-  position:absolute;
-  top:200px;
-  font-size: 1.2vw;
+
 }
 
 .postlinks{
-  color:black;
-  text-decoration: none;
+
 }
 
 .title{
-  font-weight:bold;
-  font-size:1.7vw;
+
 }
 
 /*END POST LISTS*/
 
 /*ABOUT US*/
 #About_Me{
-  width:21%;
-  background-color: #eec79f;
-  padding:1em;
-  float:right;
-  top: 7em;
-  position:absolute;
-  left:77%;
-  margin-right: 8%;
+  text-size: 10px;
+  border: 1px solid black;
+
 }
 
 #carissa{
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.7vw;
 }
 
+#About_Me img{
+
+
+}
+
+
+
 #aboutbody{
-  text-align:justify;
-  font-size:1.2vw;
-  margin-right: 10%
+
 }
 
 #profile{
-  width:80%;
-  height:80%;
+
 
 }
 
 /*POST FORMATTING*/
 body{
-  font-size:1.5vw
+
 }
 
 #whitespace{
-  background-color: #f2d07f;
-  opacity:0.45;
-  position:absolute;
-  z-index: -1;
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-attachment: absolute;
-  width:38%;
-  padding:10%;
-  margin-left: 11.8em;
-  top: 7em;
-  height:18em;
+
 
 }
 
 #actual_post{
-  padding-left:19%;
-  padding-right: 26%;
-  padding-top: 9%;
+
 
 }
 
 section{
-  width: 37em;
-  height: 19em;
-  overflow: scroll;
+
 }
