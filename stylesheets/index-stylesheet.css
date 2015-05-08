@@ -1,6 +1,12 @@
 html{
   width: 1250px;
   font-family: 'Rokkitt', serif;
+  background-color: black;
+  color: white;
+}
+
+body{
+  margin: 0px;
 }
 
 #page{
@@ -10,64 +16,57 @@ html{
 }
 
 #background img{
-  margin-left: -1%;
   position:fixed;
   z-index: -1;
-  margin-top: -1%;
-  width:1250px;
+  width:100%;
+  opacity: .7;
+  min-width: 822px;
 
 }
 
-#social_media{
-  position: absolute;
-  right:0;
-  top:0;
-  margin-right: 8px;
-  margin-top: 8px;
-}
-
-#social_media ul{
-  list-style-type: none;
-}
-
-#social_media img{
-  width:30px;
-  height:30px;
-
-}
 
 #big_title{
   text-align:center;
   font-weight: bold;
   font-size: 2em;
-  width: 1250px;
+  /*width: 1250px;
   position: relative;
-  top:130px;
+  top:130px;*/
 }
 
 #subtitle{
   text-align: center;
   font-weight: bold;
-  width: 1250px;
+  /*width: 1250px;
   position: relative;
-  top:100px;
+  top:100px;*/
+}
+
+#tagline {
+  color:white;
+  text-shadow: 1px 1px black;
+  font-size:35px;
+  font-weight: bold;
+  /*position:relative;
+  top:200px;
+  width: 1200px;*/
+
 }
 
 #nav{
-  background-color: pink;
+  background-color: #90a34b;
   position: absolute;
   bottom: 0;
   width:100%;
   font-size: 1.5em;
-  width: 1250px;
   font-weight: bold;
-  margin-left: -1%;
-
+  color: white;
 }
 
 #nav ul{
   list-style-type: none;
   text-align: center;
+  margin: 20px;
 }
 
 #nav li{
@@ -78,19 +77,10 @@ html{
 
 #nav a{
   text-decoration: none;
-  color:#000000;
+  color:white;
 }
 
-#tagline {
-  color:#ee347b;
-  text-shadow: 1px 1px black;
-  font-size:35px;
-  font-weight: bold;
-  position:relative;
-  top:200px;
-  width: 1200px;
 
-}
 
 #tagline p{
   text-align: center;
