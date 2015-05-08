@@ -1,88 +1,81 @@
 
 html{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'Rokkitt', serif;
 }
 
-
-
-/*MENU BAR*/
-#menu{
-  text-align: center;
-  font-size: 24px;
-}
-
-.link{
-
-}
-
-#firstlink{
-
-
-}
-/*END MENU BAR*/
-
-/*POST LISTS*/
-
-#Technical_list{
-
-}*/
-
-#Cultural_list{
-
-}
-
-.postlinks{
-
-}
-
-.title{
-
-}
-
-/*END POST LISTS*/
-
-/*ABOUT US*/
-#About_Me{
-  text-size: 10px;
-  border: 1px solid black;
-
-}
-
-#carissa{
-}
-
-#About_Me img{
-
-
-}
-
-
-
-#aboutbody{
-
-}
-
-#profile{
-
-
-}
-
-/*POST FORMATTING*/
 body{
-
+  margin:0;
 }
 
-#whitespace{
-
-
+main{
+  margin-top: 5.5em;
+  overflow: hidden; /*floated elements now go inside & stop floating*/
+  width: 100%;
 }
 
 #actual_post{
-
-
+  width: 65%;
+  float: left;
+  margin-left: 3%;
+  padding: 10px;
+  font-size: 18px;
+  line-height:23px;
 }
 
-section{
-
+#actual_post h1{
+  margin:0;
+  color: #90a34b;
 }
+#actual_post h2{
+  margin-top:10px;
+  color: #90a34b;
+}
+
+#actual_post ul, ol{
+  font-size: 16px;
+  line-height:19px;
+  color: #333;
+}
+
+#Blog_list{
+  width: 15%;
+  float: left;
+  margin-left: 1%;
+  padding: 10px;
+  color: #90a34b;
+}
+
+#Blog_list a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/*MENU BAR*/
+#nav{
+  background-color: #90a34b;
+  position: fixed;
+  top: 0;
+  width:100%;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+#nav ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 20px;
+}
+
+#nav li{
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#nav a{
+  text-decoration: none;
+  color:white;
+}
+/*END MENU BAR*/
