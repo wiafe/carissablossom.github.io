@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--Add fonts: font-family: 'Roboto', sans-serif;-->
+<link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,300,400italic' rel='stylesheet' type='text/css'>
+<title>Javascript Objects Cheat Sheet</title>
+</head>
+<body>
+<header>
+<h1>Javascript: A Cheat Sheet</h1>
+</header>
+<nav>
+  <a name="Top of Page"></a>
+  <p><a href="#Basic Objects">Basic Objects</a><a href="#Object Literals">Object Literals</a><a href="#Accessing Properties">Accessing Properties</a><a href="#Arrays">Arrays</a><a href="#Manipulating Data in Object Literals">Manipulating Data in Object Literals</a><a href="#Looping Through Object Literals">Looping through Literals</a></p>
+</nav>
+<hr>
+<section>
+<a name="Basic Objects"><h2>Basic Objects</h2></a>
+<p>There are TWO kinds of Objects in JS. One refers to Javascript’s built-in list of objects and any instances of them. </p>
+
+<p>Some examples are:</p>
+<ul>
+<li>Math</li>
+
+<li>Dates</li>
+
+<li>Regular Expressions</li>
+
+<li>Functions</li>
+
+<li>Strings</li>
+
+<li>Numbers</li>
+
+<li>Boolean</li>
+</ul>
+<p>
+The last three are actually primitives – you don’t create any instances explicitly in JS. You set variable_name = “” instead of explicitly creating a string instance. The interpreter then converts the primitive to a method, calls its method as an object and then revers the value back to a primitive.
+</p>
+</section>
+<section>
+<a name="Object Literals"><h2>Object Literals</h2></a>
+
+<p>OBJECT LITERALS are the SECOND type of objects and are denoted by curly braces.</p>
+
+<div class="code">var object = {};</div>
+<div class="rubytip">TIP FOR RUBYISTS: This is your HASH equivalent! The only difference is that instead of key => value, in JS it is written as property_name : value.</div>
+
+<p>Key-Value pairs are known as Property names &amp; Values. Property names can be strings or identifiers, while values can be any valid expression. Each pair is comma delimited. </p>
+
+<div class="code">var object = {
+
+  foo: 1,
+
+  "bar": "some string",
+
+  baz: {
+
+  }
+
+};</div>
+</section>
+<section>
+<a name="Accessing Properties"><h2>Accessing Properties</h2></a>
+
+<p>dot notation -  a property is accessed by giving the host object’s name, followed by a period (or dot), followed by the property name.</p>
+
+<div class="code">object.foo = object.foo + 1;</div>
+
+<p>Dot notation has to be followed by the property name, with no quotation marks, even if it is written as a string in the object literal. You can’t use the dot notation with variables.</p>
+
+<p>In bracket notation, the object name is followed by a set of square brackets. You can put either code, variables or a property name. Code is evaluated and turned into a string. Explicit property names must be given as strings</p>
+
+<div class="code">object["foo"] = object["foo"] + 1;</div>
+
+<p>Properties of nested objects can be accessed by chaining dot and/or bracket references together. (you can use the two different types together too)</p>
+
+
+<div class="code">object["baz"]["foo"]["bar"];</div>
+
+<div class="rubytip">TIP FOR RUBYISTS: functions can be values in a property name – value pair in an object literal. They can be called using their property name, followed by any parameters that their method may have:
+
+<div class="code">var object = {
+
+  sum: function(foo, bar) {
+
+    return foo + bar;
+
+  }
+
+};
+
+ object.sum(1, 2);
+
+object["sum"](1, 2);</div>
+</div>
+</section>
+<section>
+<a name="Manipulating Data in Object Literals"><h2>Manipulating Data in Object Literals</h2>
+
+<p>Adding new data to an object works the same way as creating an assignment statement:</p>
+
+<div class="code">object.foo = 1;</div>
+
+<p>Get the value using the keyword: alert</p>
+
+<div class="code">alert(object.name) —> “value";</div>
+
+<p>Delete the pair using the keyword delete</p>
+
+<div class="code">delete (object.name);</div>
+<section>
+<a name="Arrays"><h2>ARRAYS</h2></a>
+
+<p>Arrays are a TYPE of Object literal specialized for storing sequences of things.
+Arrays are written as a list of values between square brackets, with each element separated by commas.</p>
+
+<div class="code">var listOfNumbers = [2, 3, 5, 7, 11];
+
+console.log(listOfNumbers[1]); // → 3</div>
+
+<h3>ARRAY METHODS</h3>
+<table>
+<tr>
+<td>.push</td> <td>adds to end</td></tr>
+<tr>
+<td>.join</td> <td>flattens out into a string</td></tr>
+<tr><td>.pop</td><td>removes from end</td></tr>
+<tr>
+<td> unshift</td><td>add to the start</td></tr>
+<tr>
+ <td>shift</td> <td>remove from the start</td></tr>
+<tr>
+ <td>indexof</td><td>searches for a given element, starting from the beginning and going to the end. returns the first instance* </td></tr>
+<tr>
+<td>lastindexof</td> <td>searches for a given element but starts from the back.*</td></tr>
+<tr>
+<td>slice</td><td>takes a start and an end index and returns an array
+that has only the elements between those indices. The start index is inclusive, the end index exclusive</td></tr>
+<tr>
+<td>concat</td><td> can be used to glue arrays together, similar to what + does for strings</td></tr>
+</table>
+
+<p>*this method can take an optional parameter to tell it at what index to start looking</p>
+
+<div class="rubytip">TIP FOR RUBYISTS: note that console.log writes the array out as an array, more like ‘p’ would, not like ‘puts'</div>
+</section>
+<section>
+<a name="Looping Through Object Literals"></a><h2>LOOPING THROUGH OBJECT LITERALS</h2>
+
+<p>Javascript’s main implementations of looping are FOR and WHILE loops</p>
+
+<p>For loops use the following format:</p>
+
+<p>The first section refers to the counter’s starting value. The second refers to the condition under which the code will continue to loop, and the third is how the counter will increment after each loop through the code that follows inside curly braces. </p>
+
+<div class="code">for (i = 0; i < object.length; i++) {
+  some code
+};</div>
+
+<p>Javascript has a special syntax for iterating through object literals using the keyword in.</p>
+
+<p>It uses the following syntax:</p>
+
+<div class="code">for (property in object literal) {
+
+do something to each object
+
+};</div>
+
+<footer><a href="#Top of Page">^^ Back to top ^^</a></footer>
+</body>
+</html>

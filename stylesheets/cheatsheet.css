@@ -1,0 +1,72 @@
+html {
+  margin:130px;
+}
+
+header{
+  text-align: center;
+  font-family: "Open Sans",italic;font-weight:700;
+  font-size:3em;
+}
+nav{
+  text-align:center;
+  font-family: "Open Sans",italic;font-weight:400;
+  font-size:2em;
+
+}
+nav p a {
+  padding:1%;
+  text-decoration:none;
+  color:black;
+}
+section p {
+  font-size:1.6em;
+}
+section h2 {
+  font-size:3.5em;
+  padding:40px;
+  color:#3D104C;
+}
+section h3 {
+  font-size:3em;
+  color:#3D104C;
+}
+ul {
+  margin-left:100px;
+  font-size:1.6em;
+}
+.code {
+  font-size:30px;
+  text-indent: 100px;
+  color:#7A1F99;
+  padding:20px;
+}
+
+.rubytip {
+  font-size:1.6em;
+  border: 5px solid red;
+  text-align:center;
+  padding:20px;
+  margin:60px;
+  background-color:#FFE0EB;
+
+}
+table {
+  font-size:1.5em;
+  border:3px solid black;
+}
+
+table td {
+  border:1px solid black;
+  padding: 20px;
+}
+footer {
+  text-align:center;
+  font-size:20px;
+  text-decoration:none;
+  color:black;
+  margin-top:10px;
+  padding:2%;
+  /*position:absolute;*/
+  /*bottom:0;
+  width:100%;*/
+}
