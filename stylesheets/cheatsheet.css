@@ -2,21 +2,23 @@ html{
   font-family: "Open Sans";
   font-size: 18px;
   line-height: 30px;
+  margin:2% 7%;
 }
 
-section{
-  margin:2% 8%;
-}
 
 header{
   text-align: center;
   font-family: "Open Sans",italic;font-weight:700;
-  font-size:2.3em;
+  font-size:1.85em;
+  padding-top:4%;
+  padding-bottom:2%;
+  color:#3D104C;
 }
+
 nav{
   text-align:center;
   font-family: "Open Sans",italic;font-weight:400;
-  font-size:1.2em;
+  font-size:1em;
 
 }
 nav p a {
@@ -28,13 +30,13 @@ nav p a {
   font-size:1.2em;
 }*/
 section h2 {
-  font-size:2.4em;
+  font-size:1.9em;
   padding:40px 0 0 0;
   color:#3D104C;
   font-weight: bold;
 }
 section h3 {
-  font-size:2.2em;
+  font-size:1.6em;
   color:#3D104C;
 }
 ul {
