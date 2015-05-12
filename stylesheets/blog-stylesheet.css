@@ -3,39 +3,52 @@ html{
   font-family: 'Rokkitt', serif;
 }
 
-/*body{
+body{
   margin:0;
-}*/
+}
 
 main{
   overflow: hidden; floated elements now go inside & stop floating
   width: 100%;
-  margin: 6em 4em 1.5em 4em;
+  margin: 3em;
+  margin-top:180px;
+}
+
+#index_main{
+    margin: 6em 5em 1.5em 5em;
 }
 
 /*for blog posts*/
 #actual_post{
   width: 65%;
   float: left;
-  margin-left: 3%;
+  margin-left: 8%;
   padding: 10px;
-  font-size: 18px;
-  line-height:23px;
+  font-size: 19px;
+  line-height:24px;
+  text-align: justify;
 }
 
 
 #actual_post h1{
   margin:0;
   color: #90a34b;
+  font-size: 45px;
+  line-height: 55px;
 }
 #actual_post h2{
   margin-top:10px;
   color: #90a34b;
 }
 
+#actual_post img{
+  width: 100%;
+  height: 15px;
+}
+
 #actual_post ul, ol{
-  font-size: 16px;
-  line-height:19px;
+  font-size: 17px;
+  line-height:21px;
   color: #333;
 }
 
@@ -49,9 +62,18 @@ main{
 #blog_index h1{
   margin:0;
   color: #90a34b;
-  font-size:2.5em;
-  padding: 1em 0;
+  font-size:3em;
+  padding-top: 1em;
+  padding-bottom: 0.4em;
   text-align: center;
+  margin-top: 1em;
+
+}
+
+#blog_index img{
+  width: 100%;
+  height: 20px;
+  margin-bottom: 30px;
 }
 
 #blog_index h2{
@@ -101,16 +123,28 @@ main{
 #Blog_list{
   width: 15%;
   float: left;
-  margin-left: 1%;
   padding: 10px;
   color: #90a34b;
+  margin-top: 6em;
+}
+
+.title{
+  font-size: 18px;
+}
+
+#Blog_list ol{
+  padding: 0;
+  margin:0;
 }
 
 #Blog_list a{
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: #555;
+  font-size: 14px;
+
 }
+
 
 /*MENU BAR*/
 #nav{
@@ -121,7 +155,8 @@ main{
   margin-left: -1%;
   font-size: 1.5em;
   font-weight: bold;
-  color: white;
+  color: red;
+  padding: 1em 0;
 }
 
 #nav ul{
@@ -141,3 +176,15 @@ main{
   color:white;
 }
 /*END MENU BAR*/
+
+#footer {
+  background-color:#d3e1a0;
+  margin:0;
+}
+
+#footer p{
+  text-align: right;
+  margin: 0;
+  padding-right: 15px;
+  color: #777;
+}
