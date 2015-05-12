@@ -36,7 +36,7 @@ main{
   font-size: 45px;
   line-height: 55px;
 }
-#actual_post h2{
+#actual_post h2, h4{
   margin-top:10px;
   color: #90a34b;
 }
