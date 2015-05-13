@@ -180,6 +180,8 @@ main{
 #footer {
   background-color:#d3e1a0;
   margin:0;
+  position: fixed;
+  bottom: 0;
 }
 
 #footer p{
