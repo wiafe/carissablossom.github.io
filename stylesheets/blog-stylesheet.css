@@ -66,7 +66,7 @@ main{
   margin:0;
   color: #90a34b;
   font-size:3em;
-  padding-top: 1em;
+  padding-top: 1.2em;
   padding-bottom: 0.4em;
   text-align: center;
   margin-top: 1em;
@@ -124,6 +124,7 @@ main{
   font-size: 22px;
   color: #90a34b;
 }
+
 
 
 /*for blog posts shortcut to other posts*/

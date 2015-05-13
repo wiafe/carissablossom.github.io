@@ -1,0 +1,108 @@
+main{
+  overflow: hidden; floated elements now go inside & stop floating
+  width: 100%;
+  margin: 3em;
+  margin-top:140px;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+  color: #90a34b;
+}
+
+#left{
+  margin-left: 1em;
+  float: left;
+  width:50%;
+}
+
+#far_left{
+  width: 46%;
+  float:left;
+}
+
+#middle{
+  float:right;
+  width:50%;
+}
+
+#right{
+  margin:0;
+  padding:0;
+  float:right;
+  width:40%;
+}
+
+
+h3{
+  font-size: 22px;
+  padding-top: 0.5em;
+  color: #90a34b;
+/*  text-align:center;*/
+}
+
+#right h3{
+  text-align: center;
+}
+
+ul{
+  list-style-image: url('../imgs/check.png');
+}
+
+
+#right li{
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+#left li{
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+/*MENU BAR*/
+#nav{
+  background-color: #90a34b;
+  position: fixed;
+  top: 0;
+  width:101%;
+  margin-left: -1%;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: red;
+  padding: 1em 0;
+}
+
+#nav ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 20px;
+}
+
+#nav li{
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#nav a{
+  text-decoration: none;
+  color:white;
+}
+/*END MENU BAR*/
+
+#footer {
+  background-color:#d3e1a0;
+  margin:0;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+}
+
+#footer p{
+  text-align: right;
+  margin: 0;
+  padding-right: 15px;
+  color: #777;
+}
