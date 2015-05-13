@@ -1,18 +1,22 @@
+html{
+  font-family: 'Rokkitt', serif;
+}
+
 main{
   overflow: hidden; floated elements now go inside & stop floating
   width: 100%;
-  margin: 3em;
+  margin: 1em;
   margin-top:140px;
 }
 
 h1{
-  font-size: 40px;
+  font-size: 46px;
   text-align: center;
   color: #90a34b;
 }
 
 #left{
-  margin-left: 1em;
+  margin-left: 2em;
   float: left;
   width:50%;
 }
@@ -20,23 +24,26 @@ h1{
 #far_left{
   width: 46%;
   float:left;
+
 }
 
 #middle{
   float:right;
   width:50%;
+  padding-left: 10px;
+  margin-right: 0;
 }
 
 #right{
   margin:0;
   padding:0;
   float:right;
-  width:40%;
+  width:46%;
 }
 
 
 h3{
-  font-size: 22px;
+  font-size: 24px;
   padding-top: 0.5em;
   color: #90a34b;
 /*  text-align:center;*/
@@ -53,12 +60,12 @@ ul{
 
 #right li{
   padding-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #left li{
   padding-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /*MENU BAR*/
