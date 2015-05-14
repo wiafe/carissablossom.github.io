@@ -7,6 +7,17 @@ body{
   margin:0;
 }
 
+#background img{
+  position:fixed;
+  top: 0;
+  z-index: -1;
+  width:100%;
+/*  opacity: .7;*/
+/*  min-width: 822px;*/
+
+
+}
+
 main{
   overflow: hidden; floated elements now go inside & stop floating
   width: 100%;
@@ -15,43 +26,13 @@ main{
 }
 
 #index_main{
-    margin: 6em 1em 1.5em 1em;
+    margin: 6.5em;
+    margin-top: 8em;
+    background-color: white;
+    border: 6px solid #dea510;
+    border-radius: 25px;
 }
 
-/*for blog posts*/
-#actual_post{
-  width: 65%;
-  float: left;
-  margin-left: 8%;
-  padding: 10px;
-  font-size: 19px;
-  line-height:24px;
-  text-align: justify;
-  margin-top: 80px;
-}
-
-
-#actual_post h1{
-  margin:0;
-  color: #90a34b;
-  font-size: 45px;
-  line-height: 55px;
-}
-#actual_post h2, h4{
-  margin-top:10px;
-  color: #90a34b;
-}
-
-#actual_post img{
-  width: 100%;
-  height: 15px;
-}
-
-#actual_post ul, ol{
-  font-size: 17px;
-  line-height:21px;
-  color: #333;
-}
 
 
 /*for blog index page*/
@@ -60,16 +41,16 @@ main{
   font-size: 18px;
   line-height:23px;
   margin: 0 4em;
+
 }
 
 #blog_index h1{
   margin:0;
-  color: #90a34b;
+  color: #dea510;
   font-size:3em;
-  padding-top: 1.2em;
   padding-bottom: 0.4em;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 0.7em;
 
 }
 
@@ -82,7 +63,7 @@ main{
 #blog_index h2{
   margin-top:10px;
   margin-bottom: 20px;
-  color: #90a34b;
+  color: #dea510;
   font-size: 2em;
 }
 
@@ -105,7 +86,7 @@ main{
 
 #leftcolumn a{
   font-size: 22px;
-  color: #90a34b;
+  color: #dea510;
 }
 
 
@@ -122,41 +103,17 @@ main{
 
 #rightcolumn a{
   font-size: 22px;
-  color: #90a34b;
+  color: #dea510;
 }
 
 
 
-/*for blog posts shortcut to other posts*/
-#Blog_list{
-  width: 15%;
-  float: left;
-  padding: 10px;
-  color: #90a34b;
-  margin-top: 6em;
-}
 
-.title{
-  font-size: 18px;
-}
-
-#Blog_list ol{
-  padding: 0;
-  margin:0;
-}
-
-#Blog_list a{
-  text-decoration: none;
-  font-weight: bold;
-  color: #555;
-  font-size: 14px;
-
-}
 
 
 /*MENU BAR*/
 #nav{
-  background-color: #90a34b;
+  background-color: #dea510;
   position: fixed;
   top: 0;
   width:101%;
@@ -164,7 +121,7 @@ main{
   font-size: 1.5em;
   font-weight: bold;
   color: red;
-  padding: 1em 0;
+/*  padding: 1em 0;*/
 }
 
 #nav ul{
@@ -175,8 +132,9 @@ main{
 
 #nav li{
   display: inline;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: 1.1em;
 }
 
 #nav a{
@@ -186,7 +144,7 @@ main{
 /*END MENU BAR*/
 
 #footer {
-  background-color:#d3e1a0;
+  background-color:#dea510;
   margin:0;
   position: fixed;
   bottom: 0;

@@ -2,17 +2,41 @@ html{
   font-family: 'Rokkitt', serif;
 }
 
+
+body{
+  margin:0;
+}
+
+#background img{
+  position:fixed;
+  top: 0;
+  z-index: -1;
+  width:100%;
+/*  opacity: .7;*/
+/*  min-width: 822px;*/
+
+
+}
+
 main{
   overflow: hidden; floated elements now go inside & stop floating
   width: 100%;
-  margin: 1em;
-  margin-top:140px;
+  margin: 3em;
+  margin-top:120px;
+  padding-bottom: 2em;
+  padding-right: 1em;
+  padding-left: 1em;
+  background-color: white;
+  border: 6px solid #dea510;
+  border-radius: 25px;
 }
+
+
 
 h1{
   font-size: 46px;
   text-align: center;
-  color: #90a34b;
+  color: #dea510;
 }
 
 #left{
@@ -38,15 +62,15 @@ h1{
   margin:0;
   padding:0;
   float:right;
-  width:46%;
+  width:47%;
 }
 
 
 h3{
   font-size: 24px;
   padding-top: 0.5em;
-  color: #90a34b;
-/*  text-align:center;*/
+  color: #dea510;
+  text-align:center;
 }
 
 #right h3{
@@ -54,7 +78,7 @@ h3{
 }
 
 ul{
-  list-style-image: url('../imgs/check.png');
+  list-style-image: url('../imgs/check.jpeg');
 }
 
 
@@ -70,15 +94,14 @@ ul{
 
 /*MENU BAR*/
 #nav{
-  background-color: #90a34b;
+  background-color: #dea510;
   position: fixed;
   top: 0;
   width:101%;
   margin-left: -1%;
   font-size: 1.5em;
   font-weight: bold;
-  color: red;
-  padding: 1em 0;
+
 }
 
 #nav ul{
@@ -89,8 +112,9 @@ ul{
 
 #nav li{
   display: inline;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: 1.1em;
 }
 
 #nav a{
@@ -100,7 +124,7 @@ ul{
 /*END MENU BAR*/
 
 #footer {
-  background-color:#d3e1a0;
+  background-color:#dea510;
   margin:0;
   position: fixed;
   bottom: 0;

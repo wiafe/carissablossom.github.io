@@ -28,11 +28,11 @@ body{
 #big_title{
   text-align:center;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 #big_title h1{
-  margin-top: 1.5em;
+  margin-top: 1.2em;
   margin-bottom: 0;
 }
 
@@ -48,20 +48,24 @@ body{
 
 #tagline {
   color:white;
-  font-size:35px;
+  font-size:45px;
   font-family: monospace;
-  margin-top: 5em;
+  margin-top: 4.5em;
 
 }
-
+/*yellow #f1d802*/
+/*green #90a34b*/
+/*royal blue #003ea1*/
+/*mustard #dea510*/
+/*backpack red #be2d3c*/
 #nav{
-  background-color: #90a34b;
+  background-color: #dea510  ;
   position: absolute;
   bottom: 0;
   width:100%;
   font-size: 1.5em;
   font-weight: bold;
-  color: white;
+  color: black;
 }
 
 #nav ul{
@@ -72,8 +76,9 @@ body{
 
 #nav li{
   display: inline;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: 1.1em;
 }
 
 #nav a{

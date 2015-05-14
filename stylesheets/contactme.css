@@ -12,6 +12,16 @@ main{
 
 }
 
+#background img{
+  position:fixed;
+  top: 0;
+  z-index: -1;
+  width:100%;
+/*  opacity: .7;*/
+/*  min-width: 822px;*/
+
+}
+
 .contact{
     max-width: 600px;
     background: #FAFAFA;
@@ -19,7 +29,7 @@ main{
     margin: 50px auto;
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
-    border: 6px solid #90a34b;
+    border: 6px solid #dea510;
 }
 .contact ul{
     padding:0;
@@ -37,13 +47,13 @@ main{
     -moz-box-sizing: border-box;
     padding: 8px;
     outline: none;
-    border: 1px solid #90a34b;
+    border: 1px solid #dea510;
 
 
 
 }.contact ul li  .field-style:focus{
-    box-shadow: 0 0 5px #90a34b;
-    border:1px solid #90a34b;
+    box-shadow: 0 0 5px #dea510;
+    border:1px solid #dea510;
 }
 .contact ul li .field-split{
     width: 49%;
@@ -73,11 +83,11 @@ main{
 }
 .contact ul li input[type="button"],
 .contact ul li input[type="submit"] {
-    -moz-box-shadow: inset 0px 1px 0px 0px #90a34b;
-    -webkit-box-shadow: inset 0px 1px 0px 0px #90a34b;
-    box-shadow: inset 0px 1px 0px 0px #90a34b;
-    background-color: #90a34b;
-    border: 1px solid #90a34b;
+    -moz-box-shadow: inset 0px 1px 0px 0px #dea510;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #dea510;
+    box-shadow: inset 0px 1px 0px 0px #dea510;
+    background-color: #dea510;
+    border: 1px solid #dea510;
     display: inline-block;
     color: #FFFFFF;
     padding: 8px 18px;
@@ -89,13 +99,13 @@ main{
 /*SOCIAL MEDIA*/
 #share-buttons{
     position: fixed;
+    width:100%;
+    text-align: center;
     top: 120px;
-    margin-left: 29em;
 }
 
 #share-buttons h2{
-    text-align: center;
-    color: #90a34b;
+    color: #dea510;
     padding: 0;
     margin: 0;
 }
@@ -110,7 +120,7 @@ main{
 
 /*MENU BAR*/
 #nav{
-  background-color: #90a34b;
+  background-color: #dea510;
   position: fixed;
   top: 0;
   width:101%;
@@ -118,7 +128,7 @@ main{
   font-size: 1.5em;
   font-weight: bold;
   color: red;
-  padding: 0.8em 0;
+/*  padding: 0.8em 0;*/
 }
 
 #nav ul{
@@ -129,8 +139,9 @@ main{
 
 #nav li{
   display: inline;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: 1.1em;
 }
 
 #nav a{
@@ -143,7 +154,7 @@ main{
   position:fixed;
   bottom:0;
   width:100%;
-  background-color:#d3e1a0;
+  background-color:#dea510;
   margin:0;
 }
 
