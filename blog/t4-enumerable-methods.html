@@ -2,10 +2,13 @@
 <head>
   <title></title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blogpoststylesheet.css">
   <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
 
 </head>
+  <div id="background">
+    <img src='../imgs/sausalito_fisherman.png'/>
+  </div>
 
 <main>
 
@@ -41,10 +44,9 @@
 <div id="actual_post">
 <!--POST TITLES-->
   <h1>Efficiency with Enumerables:</h1>
-  <h2>Enumerables & the Cycle Method</h2>
+  <h2>Enumerables &amp; the Cycle Method</h2>
   <h4>Technical Post #4</h4>
-  <img class = "title_underline" src = '../imgs/border4.png'/>
-
+<hr>
 <!--PARAGRAPHS HERE-->
   <section>
     <p>
@@ -52,12 +54,12 @@
       Enumerables appeared as a topic last week as some unknown Class/Module that we were supposed to use in one exercise while refactoring our code. At the time, I was using Enumerable methods without really knowing what an enumerable was, or why I was able to use its methods on other classes. There is no .map method in Arrays, but somehow I could use this method on them. I'm pretty use I'd get an error message if I tried using a string method on an integer, or vice versa.
     </p>
     <p>
-      It turns out, who reason Enumerables & its methods are a bit more flexible is because it is related to Modules. As a short explanation, Modules basically solve the problem of multiple inheritance (common in other languages) for Ruby. Classes only allow for single inheritance, and Modules act like containers for groups of methods from different classes, allowing them to get 'mixed-in' together. Another interesting fact about Enumerables I discovered is that Classes can only use Enumerables if it as a .each method defined. This is important to note when we think about which of our basic classes (or classes we create) we may want to use Enumerables with. If .each doesn't exist naturally, we would have to first define this method.
+      It turns out, who reason Enumerables &amp; its methods are a bit more flexible is because it is related to Modules. As a short explanation, Modules basically solve the problem of multiple inheritance (common in other languages) for Ruby. Classes only allow for single inheritance, and Modules act like containers for groups of methods from different classes, allowing them to get 'mixed-in' together. Another interesting fact about Enumerables I discovered is that Classes can only use Enumerables if it as a .each method defined. This is important to note when we think about which of our basic classes (or classes we create) we may want to use Enumerables with. If .each doesn't exist naturally, we would have to first define this method.
     </p>
 
     <p>
         <!--Your second paragraph goes here.-->
-        So what exactly is 'Enumerables'? Enumerables is pretty much just a class full of loops & iterators! As the Ruby Bastards Book explains, this MODULE <strong>provides a set of methods to traverse, search, sort and manipulate collections.</strong> Enumerable methods provide easier, more efficient and more capable ways of traversing through code.
+        So what exactly is 'Enumerables'? Enumerables is pretty much just a class full of loops &amp; iterators! As the Ruby Bastards Book explains, this MODULE <strong>provides a set of methods to traverse, search, sort and manipulate collections.</strong> Enumerable methods provide easier, more efficient and more capable ways of traversing through code.
 
     </p>
 
