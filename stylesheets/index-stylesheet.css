@@ -13,16 +13,12 @@ body{
   height:100%;
   width:100%;
   position: absolute;
+  background-image: url(../imgs/background13.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#background img{
-  position:fixed;
-  z-index: -1;
-  width:100%;
-  opacity: .7;
-  min-width: 822px;
-
-}
 
 
 #big_title{
